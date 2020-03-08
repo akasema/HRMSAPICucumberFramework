@@ -1,4 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: com.hrms.runners.SmokeRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.829 s - in com.hrms.runners.SmokeRunner
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 42.167 s <<< FAILURE! - in com.hrms.runners.SmokeRunner
+Login.Valid  login  Time elapsed: 21.153 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-N9VNCM1', ip: '192.168.43.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:10918/status] to be available after 20010 ms
+Caused by: java.util.concurrent.TimeoutException
+
+Login.Valid  login  Time elapsed: 21.153 s  <<< ERROR!
+java.lang.NullPointerException
+
+Login.Invalid Login  Time elapsed: 20.018 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-N9VNCM1', ip: '192.168.43.244', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: ChromeDriver
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:20012/status] to be available after 20001 ms
+Caused by: java.util.concurrent.TimeoutException
+
+Login.Invalid Login  Time elapsed: 20.018 s  <<< ERROR!
+java.lang.NullPointerException
+
