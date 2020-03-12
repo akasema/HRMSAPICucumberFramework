@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="src/test/resources/features"
+		features="src/test/resources/features/AddEmployee.feature"
 		,glue="com/hrms/steps"
 		,dryRun=false
 		,plugin= {"pretty", "html:target/html/cucumber-default-report"}
